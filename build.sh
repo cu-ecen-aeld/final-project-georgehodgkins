@@ -3,8 +3,9 @@
 
 git submodule update --init --recursive
 
+# arch linux only patch -- disable on Debian-based systems
 cd tegra-demo-distro/repos/poky && git apply --check ../../../c17_poky.patch && \
-	git apply ../../../c17_poky.patch
+	git apply ../../../c17_poky.patch > /dev/null
 
 cd ../.. # tegra-demo-distro
 
