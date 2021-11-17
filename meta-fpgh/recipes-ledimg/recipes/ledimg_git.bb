@@ -10,6 +10,7 @@ DEPENDS += "opencv"
 S = "${WORKDIR}/git"
 
 FILES:${PN} += "${bindir}/testapp"
+FILES:${PN} += "${bindir}/gridtest"
 
 inherit pkgconfig cmake cuda
 
