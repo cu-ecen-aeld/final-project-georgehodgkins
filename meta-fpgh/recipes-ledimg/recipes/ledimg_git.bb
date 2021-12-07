@@ -8,6 +8,7 @@ PV = "1.0+git${SRCPV}"
 
 DEPENDS += " opencv libgpiod"
 RDEPENDS:${PN} += " libgpiod-tools"
+EXTRA_OECMAKE = " -DDEVHOST=OFF"
 
 S = "${WORKDIR}/git"
 
